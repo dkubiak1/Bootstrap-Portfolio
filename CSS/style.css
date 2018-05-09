@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/circles-and-roundabouts.png);
+    /*overflow-x: hidden;*/
+    
+    -moz-text-size-adjust: auto;
+    
+    
+}
+
+div {
+    display: block;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+
+}
+
+.container {
+    /*display: block;*/
+    font-size: 36px;
+    margin-left: 400px;
+    margin-right: 1500px;
+   
+    /*overflow: auto;*/
+    font-size: 2.5vw;
+    /*float: left;*/
+    width: 60%; 
+    /*position: relative;*/
+    padding: 10px;
+}
+
+/*.row {
+    float: left;
+    font-size: 2.5vw;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    }*/
+
+.row::after {
+    content: "" "";
+    clear: both;
+    display: block;
+}
+.container2 {
+    margin-left: 400px;
+}
+.darkBG {
+    background: black;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    line-break: auto;
+
+}
+
+.white {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.wrapper {
+  width: 300px;
+  height: 100%;  
+  position: fixed;
+  left: 0;  
+  top: 40px;
+  border: 2px solid black;
+  background: palegoldenrod;
+  z-index: 2;
+  margin-top: 10px;
+  
+  
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {display: none;}
+    .container {width: 100%;
+    overflow: auto;
+    margin-left:0;}
+}
+.img {
+    /*float: right;*/
+    /*margin-right: 50px;*/
+    float: left;
+    margin-top: 0px;
+    /*position: absolute;*/
+    width: 100%;
+    border-radius: 75px;
+    background: rgb(53, 44, 44);
+    border: 10px solid rgb(53, 44, 44);
+    /*left: 10px;*/
+    float: left;
+
+}
+
+.image {
+    padding: 20px;
+    width: 100%;
+    float: right;
+    text-align: center;
+    /*margin-right: 10px;*/
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    position: absolute;
+    border: 2px solid black;
+    background: paleturquoise;
+    top: 0px;
+}
+
+.break {
+    display: block;
+    background: palegoldenrod;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
